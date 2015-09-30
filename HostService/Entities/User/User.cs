@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Runtime.Serialization;
 
 namespace Entities.User
 {
+    [DataContract]
     public class User : BaseEntity
     {
         public string Name { get; set; }

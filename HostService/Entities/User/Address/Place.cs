@@ -1,5 +1,8 @@
-﻿namespace Entities.User.Address
+﻿using System.Runtime.Serialization;
+
+namespace Entities.User.Address
 {
+    [DataContract]
     public class Place : BaseEntity
     {
         public uint CountryId { get; set; }

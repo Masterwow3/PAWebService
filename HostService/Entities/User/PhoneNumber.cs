@@ -1,5 +1,8 @@
-﻿namespace Entities.User
+﻿using System.Runtime.Serialization;
+
+namespace Entities.User
 {
+    [DataContract]
     public class PhoneNumber : BaseEntity
     {
         public uint UserId { get; set; }
