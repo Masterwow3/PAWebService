@@ -42,8 +42,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseEntity.cs" />
+    <Compile Include="Organizer\Organizer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\Address\Address.cs" />
+    <Compile Include="User\Address\Country.cs" />
+    <Compile Include="User\Address\Language.cs" />
+    <Compile Include="User\Address\Place.cs" />
+    <Compile Include="User\LoginFailed.cs" />
+    <Compile Include="User\NotValidatedUser.cs" />
+    <Compile Include="User\PhoneNumber.cs" />
+    <Compile Include="User\RemovedUser.cs" />
     <Compile Include="User\User.cs" />
+    <Compile Include="User\UserKind.cs" />
+    <Compile Include="User\UserToUserKind.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
