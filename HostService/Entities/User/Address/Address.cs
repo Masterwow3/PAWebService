@@ -6,15 +6,15 @@ namespace Entities.User.Address
     public class Address : BaseEntity
     {
         [DataMember]
-        public uint UserId { get; set; }
+        public virtual uint UserId { get; set; }
         [DataMember]
-        public string Street { get; set; }
+        public virtual string Street { get; set; }
         [DataMember]
-        public string HouseNumber { get; set; }
+        public virtual string HouseNumber { get; set; }
         [DataMember]
-        public uint PlaceId { get; set; }
+        public virtual uint PlaceId { get; set; }
         [DataMember]
-        public uint CountryId { get; set; }
+        public virtual uint CountryId { get; set; }
 
     }
 }

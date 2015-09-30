@@ -6,10 +6,10 @@ namespace Entities.User.Address
     public class Place : BaseEntity
     {
         [DataMember]
-        public uint CountryId { get; set; }
+        public virtual uint CountryId { get; set; }
         [DataMember]
-        public string Name { get; set; }
+        public virtual string Name { get; set; }
         [DataMember]
-        public string ZipCode { get; set; }
+        public virtual string ZipCode { get; set; }
     }
 }

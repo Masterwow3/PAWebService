@@ -7,18 +7,18 @@ namespace Entities.User
     public class NotValidatedUser : BaseEntity
     {
         [DataMember]
-        public string Name { get; set; }
+        public virtual string Name { get; set; }
         [DataMember]
-        public string Surname { get; set; }
+        public virtual string Surname { get; set; }
         [DataMember]
-        public string Username { get; set; }
+        public virtual string Username { get; set; }
         [DataMember]
-        public string Email { get; set; }
+        public virtual string Email { get; set; }
         [DataMember]
-        public DateTime RegisteredDate{ get; set; }
+        public virtual DateTime RegisteredDate{ get; set; }
         [DataMember]
-        public string EmailVerificationCode { get; set; }
+        public virtual string EmailVerificationCode { get; set; }
         [DataMember]
-        public uint CountryId { get; set; }
+        public virtual uint CountryId { get; set; }
     }
 }

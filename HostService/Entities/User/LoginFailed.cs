@@ -7,8 +7,8 @@ namespace Entities.User
     public class LoginFailed
     {
         [DataMember]
-        public uint UserId { get; set; }
+        public virtual uint UserId { get; set; }
         [DataMember]
-        public DateTime FailedLoginDate { get; set; }
+        public virtual DateTime FailedLoginDate { get; set; }
     }
 }

@@ -6,10 +6,10 @@ namespace Entities.User.Address
     public class Language
     {
         [DataMember]
-        public string Key { get; set; }
+        public virtual string Key { get; set; }
         [DataMember]
-        public string Text { get; set; }
+        public virtual string Text { get; set; }
         [DataMember]
-        public uint CountryId { get; set; }
+        public virtual uint CountryId { get; set; }
     }
 }

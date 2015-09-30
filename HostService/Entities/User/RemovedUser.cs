@@ -7,16 +7,16 @@ namespace Entities.User
     public class RemovedUser
     {
         [DataMember]
-        public uint UserId { get; set; }
+        public virtual uint UserId { get; set; }
         [DataMember]
-        public string UserName { get; set; }
+        public virtual string UserName { get; set; }
         [DataMember]
-        public string UserSurname { get; set; }
+        public virtual string UserSurname { get; set; }
         [DataMember]
-        public string UserEmail { get; set; }
+        public virtual string UserEmail { get; set; }
         [DataMember]
-        public int PhotografFeedbackScore { get; set; }
+        public virtual int PhotografFeedbackScore { get; set; }
         [DataMember]
-        public DateTime RemovedDate { get; set; }
+        public virtual DateTime RemovedDate { get; set; }
     }
 }

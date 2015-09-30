@@ -6,8 +6,8 @@ namespace Entities.Organizer
     public class Organizer
     {
         [DataMember]
-        public uint UserId { get; set; }
+        public virtual uint UserId { get; set; }
         [DataMember]
-        public bool Disabled { get; set; }
+        public virtual bool Disabled { get; set; }
     }
 }

@@ -6,10 +6,10 @@ namespace Entities.User.Address
     public class Country : BaseEntity
     {
         [DataMember]
-        public string IsoCountryId { get; set; }
+        public virtual string IsoCountryId { get; set; }
         [DataMember]
-        public string Name { get; set; }
+        public virtual string Name { get; set; }
         [DataMember]
-        public int Vat { get; set; }
+        public virtual int Vat { get; set; }
     }
 }

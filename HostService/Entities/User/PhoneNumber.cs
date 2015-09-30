@@ -6,16 +6,16 @@ namespace Entities.User
     public class PhoneNumber : BaseEntity
     {
         [DataMember]
-        public uint UserId { get; set; }
+        public virtual uint UserId { get; set; }
         [DataMember]
-        public uint Präfix { get; set; }
+        public virtual uint Präfix { get; set; }
         [DataMember]
-        public int CountryPräfix { get; set; }
+        public virtual int CountryPräfix { get; set; }
         [DataMember]
-        public uint Number { get; set; }
+        public virtual uint Number { get; set; }
         [DataMember]
-        public bool IsLandline { get; set; }
+        public virtual bool IsLandline { get; set; }
         [DataMember]
-        public bool IsMobil { get; set; }
+        public virtual bool IsMobil { get; set; }
     }
 }

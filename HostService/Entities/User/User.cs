@@ -7,16 +7,16 @@ namespace Entities.User
     public class User : BaseEntity
     {
         [DataMember]
-        public string Name { get; set; }
+        public virtual string Name { get; set; }
         [DataMember]
-        public string Surname { get; set; }
+        public virtual string Surname { get; set; }
         [DataMember]
-        public string Username { get; set; }
+        public virtual string Username { get; set; }
         [DataMember]
-        public string Email { get; set; }
+        public virtual string Email { get; set; }
         [DataMember]
-        public DateTime LastLogin { get; set; }
+        public virtual DateTime LastLogin { get; set; }
         [DataMember]
-        public int CountryId { get; set; }
+        public virtual int CountryId { get; set; }
     }
 }
