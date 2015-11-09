@@ -52,12 +52,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseMaps.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\Address\AddressMaps.cs" />
+    <Compile Include="User\Address\CountryMaps.cs" />
+    <Compile Include="User\Address\PlaceMaps.cs" />
+    <Compile Include="User\LoginFailedMaps.cs" />
+    <Compile Include="User\NotValidatedUserMaps.cs" />
+    <Compile Include="User\PhoneNumberMaps.cs" />
+    <Compile Include="User\RemovedUserMaps.cs" />
+    <Compile Include="User\UserMaps.cs" />
+    <Compile Include="User\UserToUserKindMaps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{b7a16cba-40f5-4ff2-817f-f6a98df53032}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -3,7 +3,7 @@
 namespace Entities
 {
     [DataContract]
-    public class BaseEntity
+    public abstract class BaseEntity
     {
         [DataMember]
         public virtual uint Id { get; set; }

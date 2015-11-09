@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace Entities.User
 {
     [DataContract]
-    public class LoginFailed
+    public class LoginFailed : BaseEntity
     {
         [DataMember]
         public virtual uint UserId { get; set; }

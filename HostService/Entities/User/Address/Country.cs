@@ -6,6 +6,8 @@ namespace Entities.User.Address
     public class Country : BaseEntity
     {
         [DataMember]
+        public virtual string PhoneCountryPräfix { get; set; }
+        [DataMember]
         public virtual string IsoCountryId { get; set; }
         [DataMember]
         public virtual string Name { get; set; }

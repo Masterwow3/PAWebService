@@ -2,10 +2,10 @@
 
 namespace Entities.User
 {
-    [DataContract]
-    public class UserKind : BaseEntity
+    public enum UserKind
     {
-        [DataMember]
-        public virtual string Name { get; set; }
+        User = 0,
+        Photograf= 1,
+        Administrator =2
     }
 }

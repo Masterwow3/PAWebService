@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace Entities.User
@@ -18,5 +19,7 @@ namespace Entities.User
         public virtual DateTime LastLogin { get; set; }
         [DataMember]
         public virtual int CountryId { get; set; }
+        [DataMember]
+        public virtual IList<UserToUserKind> UserKinds { get; set; }
     }
 }
