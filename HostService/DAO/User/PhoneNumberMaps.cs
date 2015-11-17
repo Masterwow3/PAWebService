@@ -6,6 +6,7 @@ namespace DAO.User
     {
         public PhoneNumberMaps()
         {
+            Table("PhoneNumber");
             Map(x => x.UserId).Column("user_id");
             Map(x => x.CountryPräfix).Column("countryPräfix");
             Map(x => x.Präfix).Column("präfix");

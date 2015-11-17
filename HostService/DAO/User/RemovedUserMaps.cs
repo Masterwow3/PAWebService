@@ -7,6 +7,7 @@ namespace DAO.User
     {
         public RemovedUserMaps()
         {
+            Table("RemovedUser");
             Map(x => x.UserId).Column("user_id");
             Map(x => x.UserName).Column("user_name");
             Map(x => x.UserSurname).Column("user_surname");

@@ -8,6 +8,7 @@ namespace DAO.User
     {
         public UserMaps()
         {
+            Table("User");
             Map(x => x.Name).Column("name");
             Map(x => x.Surname).Column("surname");
             Map(x => x.Username).Column("username");

@@ -6,6 +6,7 @@ namespace DAO.User
     {
         public LoginFailedMaps()
         {
+            Table("LoginFailed");
             Map(x => x.UserId).Column("user_id");
             Map(x => x.FailedLoginDate).Column("failedLoginDate");
         }

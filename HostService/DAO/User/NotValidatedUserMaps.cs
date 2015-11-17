@@ -7,6 +7,7 @@ namespace DAO.User
     {
         public NotValidatedUserMaps()
         {
+            Table("NotValidatedUser");
             Map(x => x.Name).Column("name");
             Map(x => x.Surname).Column("surname");
             Map(x => x.Username).Column("username");
