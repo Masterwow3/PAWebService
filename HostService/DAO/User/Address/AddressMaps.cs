@@ -9,7 +9,6 @@
             Map(x => x.Street).Column("street");
             Map(x => x.HouseNumber).Column("houseNumber");
             Map(x => x.PlaceId).Column("place_id");
-            Map(x => x.CountryId).Column("country_id");
         }
     }
 }

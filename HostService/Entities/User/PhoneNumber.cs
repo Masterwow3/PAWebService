@@ -10,7 +10,7 @@ namespace Entities.User
         [DataMember]
         public virtual uint Präfix { get; set; }
         [DataMember]
-        public virtual int CountryPräfix { get; set; }
+        public virtual int CountryId { get; set; }
         [DataMember]
         public virtual uint Number { get; set; }
         [DataMember]

@@ -8,7 +8,7 @@ namespace DAO.User
         {
             Table("PhoneNumber");
             Map(x => x.UserId).Column("user_id");
-            Map(x => x.CountryPräfix).Column("countryPräfix");
+            References(x => x.CountryId).Column("country_id");
             Map(x => x.Präfix).Column("präfix");
             Map(x => x.Number).Column("number");
             Map(x => x.IsLandline).Column("isLandline");

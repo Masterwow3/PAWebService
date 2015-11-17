@@ -7,7 +7,7 @@ namespace DAO.User.Address
         public CountryMaps()
         {
             Table("Country");
-            Map(x => x.PhoneCountryPräfix).Column("phoneCountryPräfix");
+            Map(x => x.PhoneCountryPräfix).Column("countryPhonePräfix");
             Map(x => x.IsoCountryId).Column("isoCountryId");
             Map(x => x.Name).Column("name");
             Map(x => x.Vat).Column("vat");

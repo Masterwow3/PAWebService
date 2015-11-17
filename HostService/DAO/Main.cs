@@ -14,6 +14,7 @@ namespace DAO
     {
         private static ISessionFactory CreateSessionFactory()
         {
+
             return Fluently.Configure()
               .Database(MySQLConfiguration.Standard)
               .Mappings(m =>

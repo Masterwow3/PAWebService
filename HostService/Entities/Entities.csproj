@@ -47,12 +47,14 @@
     <Compile Include="User\Address\Country.cs" />
     <Compile Include="User\Address\Language.cs" />
     <Compile Include="User\Address\Place.cs" />
+    <Compile Include="User\Complained\ComplainedKinds.cs" />
     <Compile Include="User\LoginFailed.cs" />
     <Compile Include="User\NotValidatedUser.cs" />
     <Compile Include="User\PhoneNumber.cs" />
     <Compile Include="User\RemovedUser.cs" />
     <Compile Include="User\User.cs" />
     <Compile Include="User\UserKind.cs" />
+    <Compile Include="User\UserKinds.cs" />
     <Compile Include="User\UserToUserKind.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
