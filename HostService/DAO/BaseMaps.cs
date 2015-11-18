@@ -11,7 +11,7 @@ namespace DAO
     {
         public BaseMaps()
         {
-            Map(x => x.Id).Column("id");
+            Id(x => x.Id).Column("id");
         }
     }
 }

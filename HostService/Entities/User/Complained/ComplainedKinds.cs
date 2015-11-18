@@ -2,6 +2,6 @@
 {
     public enum ComplainedKinds
     {
-        
+        Unknown = 0
     }
 }

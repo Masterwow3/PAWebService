@@ -53,7 +53,6 @@
     <Compile Include="User\PhoneNumber.cs" />
     <Compile Include="User\RemovedUser.cs" />
     <Compile Include="User\User.cs" />
-    <Compile Include="User\UserKind.cs" />
     <Compile Include="User\UserKinds.cs" />
     <Compile Include="User\UserToUserKind.cs" />
   </ItemGroup>

@@ -6,7 +6,9 @@ namespace Entities.User
     public class UserToUserKind
     {
         [DataMember]
-        public virtual UserKind UserKind { get; set; }
+        public virtual uint UserId { get; set; }
+        [DataMember]
+        public virtual UserKinds UserKind { get; set; }
         [DataMember]
         public virtual bool Disabled { get; set; }
     }

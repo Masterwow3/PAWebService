@@ -1,4 +1,5 @@
 ﻿using System.Runtime.Serialization;
+using Entities.User.Address;
 
 namespace Entities.User
 {
@@ -10,7 +11,7 @@ namespace Entities.User
         [DataMember]
         public virtual uint Präfix { get; set; }
         [DataMember]
-        public virtual int CountryId { get; set; }
+        public virtual Country Country { get; set; }
         [DataMember]
         public virtual uint Number { get; set; }
         [DataMember]

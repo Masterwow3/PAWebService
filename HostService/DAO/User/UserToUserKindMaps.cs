@@ -9,8 +9,11 @@ namespace DAO.User
         public UserToUserKindMaps()
         {
             Table("UserToUserKind");
+            Id(x => x.UserId).Column("user_id");
             Map(x => x.Disabled).Column("disabled");
-            References(x => x.UserKind).Column("userKindNumber");
+            Id(x => x.UserKind)
+                .CustomType<int>()
+                .Column("userKindNumber");
         }
     }
 }
