@@ -13,15 +13,18 @@ using WebService.Global;
 
 namespace DAO
 {
-    public class Main
+    public class DAOConnection
     {
-        public static IResult<ISessionFactory> CreateSessionFactory()
+        public DAOConnection(string sqlServer, string dbUsername, string dbPassword, string dbName)
         {
-            var dbServer = "localhost";
-            var dbUsername = "root";
-            var dbName = "projectalpha";
-            var dbPassword = "";
-            var connectionString = $"Server={dbServer};Database={dbName};User ID={dbUsername};Allow Zero Datetime=true;Password={dbPassword};";
+            this.SQLServer = sqlServer;
+            this.DBName = dbName;
+            this.DBUsername = dbUsername;
+            this.DBPassword = dbPassword;
+        }
+        public IResult<ISessionFactory> CreateSessionFactory()
+        {
+            var connectionString = $"Server={SQLServer};Database={DBName};User ID={DBUsername};Password={DBPassword};";
             try
             {
                 var session = Fluently.Configure()
@@ -35,23 +38,31 @@ namespace DAO
             }
             catch (Exception ex)
             {
-                return new IResult<ISessionFactory>(null,ResultState.Error,ex.Message,ex);
+                return new IResult<ISessionFactory>(null, ResultState.Error, ex.Message, ex);
             }
         }
 
-        public static bool TestConnection()
+        public bool TestConnection()
         {
             var connection = CreateSessionFactory();
             bool canConnect = connection.Result == ResultState.Success;
             return canConnect;
         }
 
-        public static void Test()
+        public void Test()
         {
-            using (var session = DAO.Main.CreateSessionFactory().Data.OpenSession())
+            using (var session = CreateSessionFactory().Data.OpenSession())
             {
                 var test = session.Query<Entities.User.User>().ToList();
             }
         }
+
+        #region Properties
+
+        public string SQLServer { get;private set; }
+        public string DBUsername { get; private set; }
+        public string DBName { get; private set; }
+        public string DBPassword { get; private set; }
+        #endregion
     }
 }
